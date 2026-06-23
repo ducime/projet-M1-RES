@@ -1,0 +1,15 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('rm ancient') {
+            steps {
+                sh 'rm -r projet-M1-RES'
+            }
+        }
+        stage('checkout') {
+            steps {
+                sh 'git clone https://github.com/ducime/projet-M1-RES'
+            }
+        }
+    }
