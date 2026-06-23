@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git url: 'https://github.com/utilisateur/mon-repo.git', branch: 'main'
+                git url: 'https://github.com/ducime/projet-M1-RES', branch: 'main'
             }
         }
     }
